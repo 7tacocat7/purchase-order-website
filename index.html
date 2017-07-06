@@ -8,7 +8,7 @@
     <title>Order up</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container form1">
       <div class="well">
         <h1>check out your purchase order</h1>
         <form id="thisForm">
@@ -25,7 +25,7 @@
             <input id="email" class="form-control" type="text">
           </div>
           <h2>Select your product</h2>
-          <select class="form-control" id="toes">
+          <select class="form-control" id="product">
             <option>rockinghorse</option>
             <option>rockingchair</option>
             <option>rockingbed</option>
@@ -36,7 +36,7 @@
             <h3>how big is it?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="size" value="sm">
+                <input type="radio" name="size" value="sm" checked>
                 normal
               </label>
             </div>
@@ -61,19 +61,19 @@
             <label for="color">What color is your product?</label>
             <input id='color' class="form-control" type="color">
           </div>
-
+          <button type="submit" class="btn">Submit</button>
         </form>
 
       </div>
     </div>
-    <div class="container">
+    <div class="container form2">
       <div class="well">
         <p>
-          Dear <span>name</span>, <br> Thank you for your recent purchase of your new rockinghorse rocking product. We have processed your order and will be shipping your new <span>product</span> to:
+          Dear <span id="aname"></span>, <br> Thank you for your recent purchase of your new rockinghorse rocking product. We have processed your order and will be shipping your new <span id="aproduct"></span> to:
           <div class="well">
-              <span>address</span>.
+              <span id="aaddress"></span>.
           </div>
-          for your records we have sent a confirmation number and receipt for your order purchased on <span>date</span> to  <span>email</span>. for your records please keep this receipt for ever. dont ever delelte it or will kill your dog. Anyway thanks. we hope you enjoy your <span>size</span><span>product</span> that comes in the <span>color</span>.
+          for your records we have sent a confirmation number and receipt for your order purchased on <span id="adate"></span> to  <span id="aemail"></span>. for your records please keep this receipt for ever. dont ever delelte it or will kill your dog. Anyway thanks. we hope you enjoy your <span id="asize"></span><span id="aproduct"></span> that comes in the <span id="acolor"></span>.
         </p>
       </div>
     </div>
