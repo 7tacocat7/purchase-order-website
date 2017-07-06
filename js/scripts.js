@@ -1,3 +1,9 @@
+
+
+
+
+
+
 $(document).ready(function(){
   $("#thisForm").submit(function(event){
     var myName = $("input#name").val();
@@ -15,6 +21,9 @@ $(document).ready(function(){
     $("#asize").text(mySize);
     $("#adate").text(myDate);
     $("#acolor").text(myColor);
+
+    $(".form2").show();
+    $(".form1").hide();
 
     event.preventDefault();
   });
