@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type"text/css">
+    <title>Order up</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+        <h1>check out your purchase order</h1>
+        <form id="thisForm">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">your shipping address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="email">your email address</label>
+            <input id="email" class="form-control" type="text">
+          </div>
+          <h2>Select your product</h2>
+          <select class="form-control" id="toes">
+            <option>rockinghorse</option>
+            <option>rockingchair</option>
+            <option>rockingbed</option>
+            <option>rockinghouse</option>
+            <option>coffee</option>
+          </select>
+          <div class="well">
+            <h3>how big is it?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="sm">
+                normal
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="md">
+                pretty big
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="lg">
+                yuge!!
+              </label>
+            </div>
+          </div>
+          <div class="form-group>">
+            <label for="born">Date of purchase</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="color">What color is your product?</label>
+            <input id='color' class="form-control" type="color">
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="well">
+        <p>
+          Dear <span>name</span>, <br> Thank you for your recent purchase of your new rockinghorse rocking product. We have processed your order and will be shipping your new <span>product</span> to:
+          <div class="well">
+              <span>address</span>.
+          </div>
+          for your records we have sent a confirmation number and receipt for your order purchased on <span>date</span> to  <span>email</span>. for your records please keep this receipt for ever. dont ever delelte it or will kill your dog. Anyway thanks. we hope you enjoy your <span>size</span><span>product</span> that comes in the <span>color</span>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
